@@ -6,7 +6,7 @@
 
 import os, random
 
-imagesFolder = "/home/$USER/Images/Wallpapers/"
+imagesFolder = os.environ['HOME'] + "/Images/Wallpapers/"
 images = os.listdir(imagesFolder)
 
 def getRandomImage():
